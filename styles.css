@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #4caf50, #81c784);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #e3f2fd;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+#balance {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.balance-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inc-exp-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.inc-exp-container div {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  width: 45%;
+  text-align: center;
+}
+
+.money.plus {
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.money.minus {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.transaction-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.transaction-list, .add-transaction {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  width: 48%;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.list {
+  list-style-type: none;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.list li {
+  background-color: white;
+  padding: 12px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid;
+  border-radius: 8px;
+}
+
+.list li.plus {
+  border-color: green;
+}
+
+.list li.minus {
+  border-color: red;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #388e3c;
+}
